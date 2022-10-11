@@ -1,0 +1,67 @@
+T0_isot: '2022-10-09T13:17:00'
+isgri: {snr: 15.016585350036621}
+jemx1: {snr: 27.784040451049805}
+jemx2: {snr: 27.3405818939209}
+joint_fit:
+  e1_keV: 3
+  e2_keV: 80
+  flux_ecs: 4.4263e-10
+  flux_ecs_err_68p: !!python/tuple [-2.113000000000001e-11, 2.437000000000004e-11]
+  slope: 2.15041
+  slope_err_90p: !!python/tuple [-0.0712388, 0.0841283]
+obs:
+  ontime_s: !!python/object/apply:numpy.core.multiarray.scalar
+  - &id001 !!python/object/apply:numpy.dtype
+    args: [f8, false, true]
+    state: !!python/tuple [3, <, null, null, null, -1, -1, 0]
+  - !!binary |
+    fXvXoP8c4EA=
+  tstart_isot: '2022-10-10T14:31:40.002'
+  tstart_since_t0: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AIB/oGLU8D8=
+  tstop_isot: '2022-10-11T03:18:20.002'
+  tstop_since_t0: !!python/object/apply:numpy.core.multiarray.scalar
+  - *id001
+  - !!binary |
+    AACvQSBZ+T8=
+sc:
+  barytime: 0.14860478635175947
+  bodies:
+    earth:
+      body_dec: -69.422
+      body_distance: 0
+      body_in_sc: [96.70581240700233, -177.89801746071723]
+      body_ra: 19.505999999999972
+      body_size: 2.6519059844215565
+      integral_parallax: 57.29577951308232
+      separation: 137648.7
+    moon:
+      body_dec: -69.422
+      body_distance: 378263.6197848711
+      body_in_sc: [107.42228690576017, 175.47381451208662]
+      body_ra: 19.505999999999972
+      body_size: 0.2257527511911254
+      integral_parallax: 17.889794313691343
+      separation: 440848.53225096094
+    sun:
+      body_dec: -69.422
+      body_distance: 149429798.59580338
+      body_in_sc: [67.8990213752699, -3.2221167877631887]
+      body_ra: 19.505999999999972
+      body_size: 0.2668117335302039
+      integral_parallax: 0.0527904100405045
+      separation: 149396255.10412204
+  d_scx: 65.80795494270073
+  d_scy: 148.92066082137157
+  d_scz: 108.29653119134917
+  dyz_scy: 159.86951588860603
+  dyz_scz: 110.13048411135594
+  ephs: {alt: 137648.7, dec: 69.422, ra: 199.506}
+  phi: -110.130484111394
+  scx: {dec: -41.009, ra: 261.098}
+  scy: {dec: -48.35853281530182, ra: 93.1426396119698}
+  scz: {dec: 6.006, ra: 176.347}
+  theta: 65.80795494270073
+scheduled_obs: {T1_isot: '2022-10-11 13:52:21', T2_isot: '2022-10-13 00:58:26'}
