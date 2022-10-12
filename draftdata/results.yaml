@@ -1,7 +1,7 @@
 T0_isot: '2022-10-09T13:17:00'
-isgri: {snr: 15.016585350036621}
-jemx1: {snr: 27.784040451049805}
-jemx2: {snr: 27.3405818939209}
+isgri: {exposure_s: 63937.34085741686, snr: 13.343265533447266}
+jemx1: {exposure_s: 86544.6524534557, snr: 25.70436668395996}
+jemx2: {exposure_s: 84811.5586000002, snr: 24.49652671813965}
 joint_fit:
   e1_keV: 3
   e2_keV: 80
@@ -15,24 +15,24 @@ obs:
     args: [f8, false, true]
     state: !!python/tuple [3, <, null, null, null, -1, -1, 0]
   - !!binary |
-    fXvXoP8c4EA=
+    P7FOlf8Q8kA=
   tstart_isot: '2022-10-10T14:31:40.002'
   tstart_since_t0: !!python/object/apply:numpy.core.multiarray.scalar
   - *id001
   - !!binary |
     AIB/oGLU8D8=
-  tstop_isot: '2022-10-11T03:18:20.002'
+  tstop_isot: '2022-10-12T06:15:00.002'
   tstop_since_t0: !!python/object/apply:numpy.core.multiarray.scalar
   - *id001
   - !!binary |
-    AACvQSBZ+T8=
+    ADCof9KnBUA=
 sc:
   barytime: 0.14860478635175947
   bodies:
     earth:
       body_dec: -69.422
       body_distance: 0
-      body_in_sc: [96.70581240700233, -177.89801746071723]
+      body_in_sc: [96.70700691257376, -177.92729061769077]
       body_ra: 19.505999999999972
       body_size: 2.6519059844215565
       integral_parallax: 57.29577951308232
@@ -40,7 +40,7 @@ sc:
     moon:
       body_dec: -69.422
       body_distance: 378263.6197848711
-      body_in_sc: [107.42228690576017, 175.47381451208662]
+      body_in_sc: [107.42311113501043, 175.44388878344608]
       body_ra: 19.505999999999972
       body_size: 0.2257527511911254
       integral_parallax: 17.889794313691343
@@ -48,20 +48,20 @@ sc:
     sun:
       body_dec: -69.422
       body_distance: 149429798.59580338
-      body_in_sc: [67.8990213752699, -3.2221167877631887]
+      body_in_sc: [67.89812327806959, -3.2523349448476337]
       body_ra: 19.505999999999972
       body_size: 0.2668117335302039
       integral_parallax: 0.0527904100405045
       separation: 149396255.10412204
-  d_scx: 65.80795494270073
-  d_scy: 148.92066082137157
-  d_scz: 108.29653119134917
-  dyz_scy: 159.86951588860603
-  dyz_scz: 110.13048411135594
+  d_scx: 65.81131216259752
+  d_scy: 148.90559844165924
+  d_scz: 108.32307498976417
+  dyz_scy: 159.8406485434722
+  dyz_scz: 110.15935145648146
   ephs: {alt: 137648.7, dec: 69.422, ra: 199.506}
-  phi: -110.130484111394
-  scx: {dec: -41.009, ra: 261.098}
-  scy: {dec: -48.35853281530182, ra: 93.1426396119698}
-  scz: {dec: 6.006, ra: 176.347}
-  theta: 65.80795494270073
+  phi: -110.1593514565278
+  scx: {dec: -41.012, ra: 261.096}
+  scy: {dec: -48.359935891264755, ra: 93.09892784499944}
+  scz: {dec: 5.985, ra: 176.327}
+  theta: 65.81131216259752
 scheduled_obs: {T1_isot: '2022-10-11 13:52:21', T2_isot: '2022-10-13 00:58:26'}
