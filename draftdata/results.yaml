@@ -1,7 +1,7 @@
 T0_isot: '2022-10-09T13:17:00'
-isgri: {exposure_s: 70575.48680299366, snr: 13.343265533447266}
-jemx1: {exposure_s: 99061.6684179833, snr: 10.672039031982422}
-jemx2: {exposure_s: 98244.1798385212, snr: 8.533539772033691}
+isgri: {exposure_s: 100750.9583455909, snr: 13.343265533447266}
+jemx1: {exposure_s: 136645.99421158, snr: 24.779211044311523}
+jemx2: {exposure_s: 134417.231929043, snr: 23.7867374420166}
 joint_fit:
   e1_keV: 3
   e2_keV: 80
@@ -15,12 +15,12 @@ obs:
     args: [f8, false, true]
     state: !!python/tuple [3, <, null, null, null, -1, -1, 0]
   - !!binary |
-    SQA3i3/G80A=
-  tstart_isot: '2022-10-11T14:08:20.002'
+    Bb6iW//U+0A=
+  tstart_isot: '2022-10-10T14:31:40.002'
   tstart_since_t0: !!python/object/apply:numpy.core.multiarray.scalar
   - *id001
   - !!binary |
-    AAD05wFJAEA=
+    AIB/oGLU8D8=
   tstop_isot: '2022-10-13T00:18:20.002'
   tstop_since_t0: !!python/object/apply:numpy.core.multiarray.scalar
   - *id001
@@ -65,3 +65,4 @@ sc:
   scz: {dec: 5.985, ra: 176.327}
   theta: 65.81131216259752
 scheduled_obs: {T1_isot: '2022-10-11 13:52:21', T2_isot: '2022-10-13 00:58:26'}
+scheduled_obs_p3: {T1_isot: '2022-10-14 20:42:27', T2_isot: '2022-10-16 04:47:41'}
