@@ -1,0 +1,9 @@
+gcn32793:
+        url: https://gcn.gsfc.nasa.gov/gcn3/32793.gcn3
+        data:
+                grb_waiting_time_yr: 512
+
+
+facts:
+        grb_waiting_time_yr: 512
+        grb_waiting_time_yr_ref: gcn32793
