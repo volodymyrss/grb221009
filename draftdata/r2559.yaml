@@ -1,0 +1,18 @@
+telapse_sum_s: !!python/object/apply:numpy.core.multiarray.scalar
+- &id001 !!python/object/apply:numpy.dtype
+  args: [f8, false, true]
+  state: !!python/tuple [3, <, null, null, null, -1, -1, 0]
+- !!binary |
+  gIDCRAEl/UA=
+telapse_total_s: !!python/object/apply:numpy.core.multiarray.scalar
+- *id001
+- !!binary |
+  UL86WrES/0A=
+tstart_ijd: !!python/object/apply:numpy.core.multiarray.scalar
+- *id001
+- !!binary |
+  7+RFvsg/wEA=
+tstop_ijd: !!python/object/apply:numpy.core.multiarray.scalar
+- *id001
+- !!binary |
+  dv2GTIVAwEA=

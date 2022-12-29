@@ -1,6 +1,9 @@
 T0_isot: '2022-10-09T13:17:00'
 isgri: {exposure_s: 177949.3308846276}
-ixpe_obs: {T1_isot: '2022-10-11T23:34:28', T2_isot: '2022-10-14T00:45:31', ref: https://www.astronomerstelegram.org/?read=15678}
+ixpe_obs:
+    T1_isot: '2022-10-11T23:34:28'
+    T2_isot: '2022-10-14T00:45:31'
+    ref: https://www.astronomerstelegram.org/?read=15678}
 jemx1: {exposure_s: 225973.983140565, snr: 22.080917358398438}
 jemx2: {exposure_s: 217203.327134475, snr: 21.826650619506836}
 joint_fit:
