@@ -1,28 +1,52 @@
 T0_isot: '2022-10-09T13:17:00'
-isgri: {exposure_s: 177949.3308846276}
+isgri:
+  exposure_s: 177949.3308846276
 ixpe_obs:
-    T1_isot: '2022-10-11T23:34:28'
-    T2_isot: '2022-10-14T00:45:31'
-    ref: https://www.astronomerstelegram.org/?read=15678}
-jemx1: {exposure_s: 225973.983140565, snr: 22.080917358398438}
-jemx2: {exposure_s: 217203.327134475, snr: 21.826650619506836}
+  T1_isot: '2022-10-11T23:34:28'
+  T2_isot: '2022-10-14T00:45:31'
+  ref: https://www.astronomerstelegram.org/?read=15678}
+jemx1:
+  exposure_s: 225973.983140565
+  snr: 22.080917358398438
+jemx2:
+  exposure_s: 217203.327134475
+  snr: 21.826650619506836
 joint_fit:
   e1_keV: 3
   e2_keV: 80
   flux_ecs: 4.4263e-10
-  flux_ecs_err_68p: !!python/tuple [-2.113000000000001e-11, 2.437000000000004e-11]
+  flux_ecs_err_68p: !!python/tuple
+  - -2.113000000000001e-11
+  - 2.437000000000004e-11
   slope: 2.15041
-  slope_err_90p: !!python/tuple [-0.0712388, 0.0841283]
+  slope_err_90p: !!python/tuple
+  - -0.0712388
+  - 0.0841283
 obs: {}
 ontime_s: !!python/object/apply:numpy.core.multiarray.scalar
 - &id001 !!python/object/apply:numpy.dtype
-  args: [f8, false, true]
-  state: !!python/tuple [3, <, null, null, null, -1, -1, 0]
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
 - !!binary |
   l6yKcL9KCEE=
-scheduled_obs: {T1_isot: '2022-10-11 13:52:21', T2_isot: '2022-10-13 00:58:26'}
-scheduled_obs_p3: {T1_isot: '2022-10-14 20:42:27', T2_isot: '2022-10-16 04:47:41',
-  ref: https://www.cosmos.esa.int/web/integral/schedule-information}
+scheduled_obs:
+  T1_isot: '2022-10-11 13:52:21'
+  T2_isot: '2022-10-13 00:58:26'
+scheduled_obs_p3:
+  T1_isot: '2022-10-14 20:42:27'
+  T2_isot: '2022-10-16 04:47:41'
+  ref: https://www.cosmos.esa.int/web/integral/schedule-information
 telapse_sum_s: !!python/object/apply:numpy.core.multiarray.scalar
 - *id001
 - !!binary |

@@ -7,3 +7,6 @@
 [submodule "pom"]
 	path = pom
 	url = git@github.com:volodymyrss/grb221009a-ipom.git
+[submodule "grb221009a-ipom"]
+	path = grb221009a-ipom
+	url = git@github.com:volodymyrss/grb221009a-ipom.git
