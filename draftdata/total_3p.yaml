@@ -4,7 +4,7 @@ isgri:
 ixpe_obs:
   T1_isot: '2022-10-11T23:34:28'
   T2_isot: '2022-10-14T00:45:31'
-  ref: https://www.astronomerstelegram.org/?read=15678}
+  ref: https://www.astronomerstelegram.org/?read=15678
 jemx1:
   exposure_s: 225973.983140565
   snr: 22.080917358398438
