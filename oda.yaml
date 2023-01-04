@@ -1,20 +1,12 @@
 odafunc: |
-    from odafunction.func.urifunc import URIPythonFunction, URIipynbFunction
-    from odafunction.catalogviews import FunctionCatalogKeyedLocalValuedAttrs
+    from odafunction import LocalPythonFunction
+    from odafunction.func.urifunc import URIPythonFunction, URIipynbFunction    
+    from fcat import Cat       
 
-
-    fc = FunctionCatalogKeyedLocalValuedAttrs()
+    fc = Cat()
 
     fc.add("examplefunc", 
-           URIPythonFunction("file:///home/savchenk/odafunction/tests/test_data/filewithfunc.py::examplefunc"))
-    
-    fc.add("eventrate", 
-           URIipynbFunction("ipynb+file:///home/savchenk/grb221009/eventrate.ipynb"))    
-
-    fc.add("grbbase", 
-           URIipynbFunction("ipynb+file:///home/savchenk/grb221009/grb221009.ipynb"))    
-
-           
+           URIPythonFunction("file:///home/savchenk/odafunction/tests/test_data/filewithfunc.py::examplefunc"))               
 
     fc.add("cites", 
            URIPythonFunction("file:///home/savchenk/grb221009/cite_semantic.py::gen"))
