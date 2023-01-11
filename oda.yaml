@@ -1,15 +1,20 @@
-odafunc: |
+o: |
     from odafunction import LocalPythonFunction
     from odafunction.func.urifunc import URIPythonFunction, URIipynbFunction    
     from fcat import Cat       
     fd = Cat(asdict=True)
 
-#     fc = Cat()
-
-#     fc.add("examplefunc", 
-#            URIPythonFunction("file:///home/savchenk/odafunction/tests/test_data/filewithfunc.py::examplefunc"))               
-
-#     fc.add("cites", 
-#            URIPythonFunction("file:///home/savchenk/grb221009/cite_semantic.py::gen"))
-
     
+of: |
+    from odafunction import LocalPythonFunction
+    from odafunction.func.urifunc import URIPythonFunction, URIipynbFunction    
+    from fcat import Cat       
+
+    fc = Cat()
+
+    fc.add("examplefunc", 
+           URIPythonFunction("file:///home/savchenk/odafunction/tests/test_data/filewithfunc.py::examplefunc"))               
+
+    fc.add("cites", 
+           URIPythonFunction("file:///home/savchenk/grb221009/cite_semantic.py::gen"))
+
