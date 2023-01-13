@@ -28,9 +28,9 @@ class Cat(FunctionCatalogKeyedLocalValuedAttrs):
         image_dict = {}
 
         for c in r['output_nb']['cells']:
-            for output in c['outputs']:
+            for output in c.get('outputs', []):
                 if img_b64:=output.get('data', {}).get('image/png', None):                                                            
-                    logger.info(f"\033[31mfound image >>>\033[0m")
+                    logger.info(f"*found image >>>*")
                     image_dict[f'img_{len(image_dict)}'] = img_b64
 
         def savefig(name, fn):

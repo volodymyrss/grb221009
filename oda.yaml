@@ -7,8 +7,11 @@ o: |
     
 of: |
     from odafunction import LocalPythonFunction
+    import odafunction.logs
     from odafunction.func.urifunc import URIPythonFunction, URIipynbFunction    
-    from fcat import Cat       
+    from fcat import Cat   
+
+    odafunction.logs.app_logging.setup()    
 
     fc = Cat()
 
