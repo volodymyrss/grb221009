@@ -33,6 +33,16 @@ class Cat(FunctionCatalogKeyedLocalValuedAttrs):
                     logger.info(f"*found image >>>*")
                     image_dict[f'img_{len(image_dict)}'] = img_b64
 
+        for k, v in r['output_values'].items():
+            if k.endswith("_content"):                                                            
+                logger.info(f"[red]found image >>>[/] %s", k)
+                image_dict[k.replace("_content", "")] = v
+
+        
+        for k in image_dict:
+            logger.info(f"[red] summary found image >>>[/] %s", k)
+                    
+
         def savefig(name, fn):
             os.makedirs(os.path.dirname(fn), exist_ok=True)
             logger.info(f"\033[31mcell outputs image stored to >>>\033[0m %s", fn)
