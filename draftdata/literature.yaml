@@ -1,33 +1,3 @@
-facts:
-  distance_Mpc: !!python/object/apply:numpy.core.multiarray.scalar
-  - !!python/object/apply:numpy.dtype
-    args:
-    - f8
-    - false
-    - true
-    state: !!python/tuple
-    - 3
-    - <
-    - null
-    - null
-    - null
-    - -1
-    - -1
-    - 0
-  - !!binary |
-    r4LJRB60hkA=
-  eiso_erg: 2.0e+54
-  eiso_erg_cm2: 2e+54
-  eiso_erg_cm2_ref: gcn32648
-  eiso_erg_ref: gcn32648
-  grb_waiting_time_yr: 512
-  grb_waiting_time_yr_ref: gcn32793
-  opening_angle_deg: 3.5
-  redshift: 0.151
-  redshift_ref: gcn32648
-gcn32648:
-  redshift: 0.151
-gcn32793:
-  data:
-    grb_waiting_time_yr: 512
-  url: https://gcn.gsfc.nasa.gov/gcn3/32793.gcn3
+facts: {distance_Mpc: 726.5147796385771, eiso_erg: 2.0e+54, eiso_erg_ref: gcn32648,
+  opening_angle_deg: 3.5, redshift: 0.151, redshift_ref: gcn32648}
+gcn32648: {redshift: 0.151}
