@@ -6,4 +6,4 @@ def gen(modality, ref):
     with open("found-references.bib", "ab") as f:        
         f.write(r.content)
 
-    return f"{modality}:{ref}:\cite{{Falcone_2007}}"
+        return f"{modality}:{ref}:\cite{{Falcone_2007}}"
