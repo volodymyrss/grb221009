@@ -1,8 +1,10 @@
 import glob
 import inspect
+import json
 import os
 import base64
 import logging
+import re
 
 from odafunction.executors import default_execute_to_value
 from odafunction.func.urifunc import URIPythonFunction, URIipynbFunction, URIValue
@@ -84,8 +86,21 @@ class Cat(FunctionCatalogKeyedLocalValuedAttrs):
                         print("NOT extracting images for", f0)
                     
                     if isinstance(v, dict):
-                        v = v.get('output_values', v)
-                        # v = v.get(__name, v)
+                        if 'output_nb' in v:
+                            base_fn = "computed_data/" + re.sub("[^0-9a-zA-Z]", "_", str((func, args, kwds)))
+                            os.makedirs(os.path.dirname(base_fn), exist_ok=True)
+
+                            with open(base_fn + ".ipynb", "w") as f:
+                                json.dump(v['output_nb'], f)
+
+                            with open(base_fn + ".json", "w") as f:
+                                try:
+                                    json.dump({a:b for a,b in v['output_values'].items() if a!='savefig'}, f)
+                                except Exception as e:
+                                    logger.error("unable to serialize %s due to %s", v['output_values'], e)
+
+                            v = v['output_values']                        
+                                
 
                     return v                
 
