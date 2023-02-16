@@ -26,3 +26,5 @@ r2560 = fc.grbbase(focus_obs_name="r2560")['data']
 
 r = fc.grbbase(focus_obs_name="late")
 lateobs = r['data']
+
+fd.positrons["ul_positrons_msun"]
