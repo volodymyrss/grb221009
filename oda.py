@@ -5,7 +5,7 @@ from fcat import Cat
 
 odafunction.logs.app_logging.setup()    
 
-__all__ = ["fd", "fc", "results", "r2560", "total_3p", "lateobs"]
+__all__ = ["fd", "fc", "results", "r2560", "total_3p", "lateobs", "r2558",  "r25589"]
 
 
 fd = Cat(asdict=True)  
@@ -22,6 +22,9 @@ total_3p = results
 
 eventrate = fd.eventrate
 
+r2558 = fc.grbbase(focus_obs_name="r2558")['data']
+r2559 = fc.grbbase(focus_obs_name="r2559")['data']
+r25589 = fc.grbbase(focus_obs_name="r25589")['data']
 r2560 = fc.grbbase(focus_obs_name="r2560")['data']
 
 r = fc.grbbase(focus_obs_name="late")
