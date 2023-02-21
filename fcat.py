@@ -108,4 +108,4 @@ class Cat(FunctionCatalogKeyedLocalValuedAttrs):
 
             return r
 
-        return super().__getattr__(__name)    
+        return getattr(super(), __name)    
