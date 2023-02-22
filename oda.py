@@ -5,7 +5,7 @@ from fcat import Cat
 
 odafunction.logs.app_logging.setup()    
 
-__all__ = ["fd", "fc", "results", "r2560", "total_3p", "lateobs", "r2558",  "r25589"]
+__all__ = ["fd", "fc", "results", "r2560", "total_3p", "lateobs", "r2558",  "r25589", "r2559"]
 
 
 fd = Cat(asdict=True)  
