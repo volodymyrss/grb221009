@@ -4,5 +4,5 @@ draft:
 push-copies:
 	cp paper/main.tex paper/figs/* paper-ej/
 	cp paper/main.tex paper/figs/* paper-pu/
-	(cd paper-ej/; git commit -a -m "upstream update"; git push)
-	(cd paper-pu/; git commit -a -m "upstream update"; git push)
+	(cd paper-ej/; git add figs/*; git commit -a -m "upstream update"; git push)
+	(cd paper-pu/; git add figs/*; git commit -a -m "upstream update"; git push)
