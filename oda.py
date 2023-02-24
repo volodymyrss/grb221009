@@ -5,7 +5,7 @@ from fcat import Cat
 
 odafunction.logs.app_logging.setup()    
 
-__all__ = ["fd", "fc", "results", "r2560", "total_3p", "lateobs", "r2558",  "r25589", "r2559"]
+__all__ = ["fd", "fc", "results", "r2560", "total_3p", "lateobs", "r2558",  "r25589", "r2559", "ag"]
 
 
 fd = Cat(asdict=True)  
@@ -31,3 +31,5 @@ r = fc.grbbase(focus_obs_name="late")
 lateobs = r['data']
 
 fd.positrons["ul_positrons_msun"]
+
+ag = fc.afterglow(nsampler=3000)
