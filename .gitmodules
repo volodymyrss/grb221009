@@ -10,3 +10,9 @@
 [submodule "grb221009a-ipom"]
 	path = grb221009a-ipom
 	url = git@github.com:volodymyrss/grb221009a-ipom.git
+[submodule "paper-ej"]
+	path = paper-ej
+	url = https://git.overleaf.com/63f927f82043599b6917ac65
+[submodule "paper-pu"]
+	path = paper-pu
+	url = https://git.overleaf.com/63f92982204359937817c120
