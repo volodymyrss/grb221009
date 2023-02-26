@@ -39,5 +39,6 @@ ag = fc.afterglow(nsampler=30)
 ag_fit = ag['ag_fit']
 rings = ag['rings']
 
+iil = fc.iilight()
 
 #stat_err_plus
