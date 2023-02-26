@@ -1,8 +1,15 @@
-draft:
-	make -C 634522c9c32e5b2d52230e81
+COPY?=ej
 
-push-copies:
-	cp paper/main.tex paper/figs/* paper-ej/
-	cp paper/main.tex paper/figs/* paper-pu/
-	(cd paper-ej/; git add figs/*; git commit -a -m "upstream update"; git push)
-	(cd paper-pu/; git add figs/*; git commit -a -m "upstream update"; git push)
+draft:
+	make -C paper
+
+push-copy:
+	cp -fv paper/main.tex paper/figs/* paper-$(COPY)/
+	(cd paper-$(COPY)/; git add figs/*; git commit -a -m "upstream update"; git push)
+
+pull-copy:
+	(cd paper-$(COPY)/; git pull)
+	git clone paper paper-branch-for-merge-$(COPY) || true
+	(cd paper-branch-for-merge-$(COPY); git checkout -b $(COPY); cp -fv ../paper-$(COPY)/main.tex .; git commit -a -m "$(COPY) copy  update") || true
+	#(cd paper; git remote add $(COPY) ../paper-branch-for-merge-$(COPY); git fetch $(COPY) $(COPY))
+
