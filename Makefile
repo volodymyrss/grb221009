@@ -13,3 +13,6 @@ pull-copy:
 	(cd paper-branch-for-merge-$(COPY); git checkout -b $(COPY); cp -fv ../paper-$(COPY)/main.tex .; git commit -a -m "$(COPY) copy  update") || true
 	#(cd paper; git remote add $(COPY) ../paper-branch-for-merge-$(COPY); git fetch $(COPY) $(COPY))
 
+
+store-pull:
+	rsync --exclude '*0.2.2[0-4]*' --exclude  '*0.2.19*' -avu me:/tmp/nb2w-store/ /tmp/nb2w-store/
