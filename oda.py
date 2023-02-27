@@ -8,7 +8,7 @@ odafunction.logs.app_logging.setup()
 __all__ = ["fd", "fc", "results", "r2560", "total_3p", "lateobs", 
            "r2558",  "r25589", "r2559", "ag", "ag_fit",
            "rings", "iil", 
-           "literature"]
+           "literature", "known_facts"]
 
 
 fd = Cat(asdict=True)  
@@ -42,6 +42,7 @@ rings = ag['rings']
 
 iil = fc.iilight()
 
-literature = fd.literature['data']
+literature = fc.literature()
+known_facts = literature['facts']
 
 #stat_err_plus

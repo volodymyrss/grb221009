@@ -1,7 +1,7 @@
 COPY?=ej
 
 draft:
-	make -C paper
+	make -C paper draft pdf
 
 push-copy:
 	cp -fv paper/main.tex paper-$(COPY)/
