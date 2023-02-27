@@ -4,7 +4,8 @@ draft:
 	make -C paper
 
 push-copy:
-	cp -fv paper/main.tex paper/figs/* paper-$(COPY)/
+	cp -fv paper/main.tex paper-$(COPY)/
+	cp -fv paper/figs/* paper-$(COPY)/figs/
 	(cd paper-$(COPY)/; git add main.tex main.bbl figs/*; git commit -a -m "upstream update"; git push)
 
 pull-copy:
