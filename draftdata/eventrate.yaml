@@ -1,2 +1,3 @@
 {on_axis_rate_fraction: 3367.5886734219816, typical_distance_offaxis_samerate: 49.79998023792378,
-  typical_waiting_time_offaxis_samedist: 0.14847418983979538}
+  typical_distance_offaxis_samerate_mpc: 49.79998023792378, typical_waiting_time_offaxis_samedist: 0.14847418983979538,
+  typical_waiting_time_offaxis_samedist_yr: 2.969483796795908}
