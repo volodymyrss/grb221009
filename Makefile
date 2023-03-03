@@ -3,6 +3,11 @@ COPY?=ej
 draft:
 	make -C paper draft pdf
 
+push:
+	git commit -a -m "update"
+	git submodule foreach git push
+	git push
+
 push-copy:
 	cp -fv paper/main.tex paper-$(COPY)/
 	cp -fv paper/figs/* paper-$(COPY)/figs/
