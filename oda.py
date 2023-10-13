@@ -23,6 +23,8 @@ fc.add("cites",
 results = fc.grbbase(focus_obs_name="total_3p")['data']
 total_3p = results
 
+prompt = fd.prompt
+
 eventrate = fd.eventrate
 
 r2558 = fc.grbbase(focus_obs_name="r2558")['data']
@@ -35,8 +37,8 @@ lateobs = r['data']
 
 fd.positrons["ul_positrons_msun"]
 
-ag = fc.afterglow(nsampler=3000)
-#ag = fc.afterglow(nsampler=30)
+#ag = fc.afterglow(nsampler=3000)
+ag = fc.afterglow(nsampler=30)
 #ag = fc.afterglow(nsampler=3000)
 ag_fit = ag['ag_fit']
 rings = ag['rings']
@@ -47,3 +49,5 @@ literature = fc.literature()
 known_facts = literature['facts']
 
 #stat_err_plus
+
+print(literature)
