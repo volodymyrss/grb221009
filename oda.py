@@ -39,7 +39,7 @@ fd.positrons["ul_positrons_msun"]
 
 #ag = fc.afterglow(nsampler=1500)
 #ag = fc.afterglow(nsampler=30)
-ag = fc.afterglow(nsampler=3000)
+ag = fc.afterglow(nsampler=1000)
 ag_fit = ag['ag_fit']
 rings = ag['rings']
 
